@@ -1,0 +1,200 @@
+.admin-shell {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: var(--sidebar-w);
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: width 0.25s ease;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.admin-shell.sidebar-collapsed .sidebar { width: 68px; }
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  min-height: var(--header-h);
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.logo-icon {
+  width: 34px; height: 34px;
+  background: var(--gradient);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: white;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: white;
+  white-space: nowrap;
+}
+
+.sidebar-toggle {
+  width: 28px; height: 28px;
+  background: rgba(255,255,255,0.07);
+  border: none;
+  border-radius: 6px;
+  color: #94a3b8;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+.sidebar-toggle:hover { background: rgba(255,255,255,0.12); color: white; }
+
+.sidebar-nav {
+  flex: 1;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: var(--transition);
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+
+.nav-item:hover { background: rgba(255,255,255,0.07); color: #e2e8f0; }
+.nav-item.active { background: rgba(59,130,246,0.18); color: var(--primary); }
+.nav-icon { width: 18px; text-align: center; flex-shrink: 0; font-size: 0.9rem; }
+
+.sidebar-footer {
+  padding: 10px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.logout-btn { color: #f87171; }
+.logout-btn:hover { background: rgba(239,68,68,0.12) !important; color: #ef4444 !important; }
+
+/* ===== TOPBAR ===== */
+.topbar {
+  height: var(--header-h);
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.hamburger-btn {
+  display: none;
+  background: none; border: none;
+  font-size: 1.1rem; color: var(--dark-3); cursor: pointer;
+  padding: 6px;
+}
+
+.topbar-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--dark);
+  flex: 1;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 4px 12px 4px 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--dark-3);
+}
+
+.user-avatar {
+  width: 28px; height: 28px;
+  background: var(--gradient);
+  color: white;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* ===== MAIN ===== */
+.main-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 28px 28px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    width: var(--sidebar-w) !important;
+    z-index: 300;
+  }
+
+  .admin-shell.mobile-open .sidebar { transform: translateX(0); }
+
+  .mobile-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 250;
+  }
+
+  .hamburger-btn { display: flex; }
+  .topbar-title { font-size: 0.9rem; }
+  .sidebar-toggle { display: none; }
+  .main-content { padding: 16px; }
+}

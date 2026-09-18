@@ -1,0 +1,451 @@
+{
+  "profile": {
+    "name": "Dejenie Abebe",
+    "title": "IT Professional",
+    "tagline": "IT PROFESSIONAL · ERP · NETWORKING · CYBERSECURITY",
+    "headline": "Building Reliable IT Solutions for Modern Businesses",
+    "bio": "I'm an IT professional experienced in ERP implementation, IT support, networking, system administration, and business technology solutions. I enjoy solving technical problems and building reliable systems that help organizations work more efficiently.",
+    "about1": "I am a dedicated IT professional with over 5 years of hands-on experience in deploying and managing ERP systems, designing and maintaining enterprise networks, and providing comprehensive IT support to organizations of all sizes.",
+    "about2": "My passion lies in leveraging technology to solve real-world business challenges. From setting up infrastructure to training end users on complex systems, I bring a holistic approach to every project.",
+    "about3": "I hold certifications in networking, cybersecurity, and ERP platforms, and I continuously update my skill set to stay ahead of the rapidly evolving technology landscape.",
+    "location": "Addis Ababa, Ethiopia",
+    "email": "dejenieabebe767@email.com",
+    "phone": "+251 923416687",
+    "availability": "Available for work",
+    "linkedin": "#",
+    "github": "https://github.com/Dejenghub1221",
+    "twitter": "#",
+    "telegram": "0923416687",
+    "cvFile": "",
+    "photo": "",
+    "stats": {
+      "experience": "5",
+      "projects": "30",
+      "clients": "20"
+    }
+  },
+  "experience": [
+    {
+      "id": "exp-1",
+      "title": "IT Manager",
+      "company": "ABC Organization",
+      "period": "2022 – Present",
+      "description": "Led the IT department overseeing network infrastructure, server management, and end-user support. Implemented ERP solutions that improved operational efficiency by 40%. Managed a team of 5 IT technicians.",
+      "tags": [
+        "ERP",
+        "Team Leadership",
+        "Network Admin"
+      ],
+      "order": 1
+    },
+    {
+      "id": "exp-2",
+      "title": "Network Engineer",
+      "company": "Tech Solutions Ltd.",
+      "period": "2020 – 2022",
+      "description": "Designed, deployed, and maintained enterprise LAN/WAN networks for corporate clients. Configured Cisco routers and switches, implemented firewall policies, and provided 24/7 network monitoring.",
+      "tags": [
+        "Cisco",
+        "Routing & Switching",
+        "Firewall"
+      ],
+      "order": 2
+    },
+    {
+      "id": "exp-3",
+      "title": "IT Support Specialist",
+      "company": "Global Enterprises",
+      "period": "2018 – 2020",
+      "description": "Provided first and second-line IT support to over 200 employees. Managed help desk tickets, performed hardware/software troubleshooting, maintained Active Directory, and delivered IT training sessions.",
+      "tags": [
+        "Help Desk",
+        "Active Directory",
+        "Windows Server"
+      ],
+      "order": 3
+    },
+    {
+      "id": "exp-4",
+      "title": "Junior IT Technician",
+      "company": "StartUp Hub",
+      "period": "2016 – 2018",
+      "description": "Installed and configured hardware and software for new users. Assisted in network cabling and setup, supported daily IT operations, and maintained IT asset inventory.",
+      "tags": [
+        "Hardware",
+        "Cabling",
+        "IT Support"
+      ],
+      "order": 4
+    }
+  ],
+  "skills": [
+    {
+      "id": "sk-1",
+      "name": "ERP Implementation (Odoo/SAP)",
+      "percentage": 90,
+      "category": "Technical",
+      "order": 1
+    },
+    {
+      "id": "sk-2",
+      "name": "Network Administration",
+      "percentage": 88,
+      "category": "Technical",
+      "order": 2
+    },
+    {
+      "id": "sk-3",
+      "name": "Cybersecurity",
+      "percentage": 80,
+      "category": "Technical",
+      "order": 3
+    },
+    {
+      "id": "sk-4",
+      "name": "Windows Server / Active Directory",
+      "percentage": 85,
+      "category": "Technical",
+      "order": 4
+    },
+    {
+      "id": "sk-5",
+      "name": "Linux System Administration",
+      "percentage": 75,
+      "category": "Technical",
+      "order": 5
+    },
+    {
+      "id": "sk-6",
+      "name": "Cisco Routing & Switching",
+      "percentage": 85,
+      "category": "Tools",
+      "order": 6
+    },
+    {
+      "id": "sk-7",
+      "name": "Firewall & VPN Configuration",
+      "percentage": 82,
+      "category": "Tools",
+      "order": 7
+    },
+    {
+      "id": "sk-8",
+      "name": "Cloud Services (Azure/AWS)",
+      "percentage": 70,
+      "category": "Tools",
+      "order": 8
+    },
+    {
+      "id": "sk-9",
+      "name": "Database Administration",
+      "percentage": 78,
+      "category": "Tools",
+      "order": 9
+    },
+    {
+      "id": "sk-10",
+      "name": "IT Project Management",
+      "percentage": 83,
+      "category": "Tools",
+      "order": 10
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Enterprise ERP Rollout",
+      "description": "Full-scale Odoo ERP implementation for a manufacturing company with 500+ users. Covered HR, Inventory, Accounting, and CRM modules.",
+      "tags": [
+        "ERP",
+        "Odoo"
+      ],
+      "image": "",
+      "link": "#",
+      "order": 1
+    },
+    {
+      "id": "proj-2",
+      "title": "Corporate Network Infrastructure",
+      "description": "Designed and deployed a multi-site WAN/LAN network with redundancy, QoS, and centralized management for a financial institution.",
+      "tags": [
+        "Networking",
+        "Cisco"
+      ],
+      "image": "",
+      "link": "#",
+      "order": 2
+    },
+    {
+      "id": "proj-3",
+      "title": "IT Security Assessment",
+      "description": "Conducted a comprehensive security audit and vulnerability assessment for a government agency, delivering a remediation roadmap and policy updates.",
+      "tags": [
+        "Cybersecurity",
+        "Audit"
+      ],
+      "image": "",
+      "link": "#",
+      "order": 3
+    }
+  ],
+  "services": [
+    {
+      "id": "svc-1",
+      "title": "IT Support & Help Desk",
+      "description": "Fast and reliable IT support for hardware, software, connectivity issues and any system support. Remote and on-site assistance for individuals and businesses.",
+      "icon": "fas fa-headset",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "svc-2",
+      "title": "ERP Consulting & Implementation",
+      "description": "End-to-end ERP project management from needs analysis and system selection to deployment, customization, and user training.",
+      "icon": "fas fa-database",
+      "color": "#6366f1",
+      "order": 2
+    },
+    {
+      "id": "svc-3",
+      "title": "Network Design & Administration",
+      "description": "LAN/WAN design, router and switch configuration, wireless deployment, VPN setup, and ongoing network monitoring and maintenance.",
+      "icon": "fas fa-network-wired",
+      "color": "#10b981",
+      "order": 3
+    },
+    {
+      "id": "svc-4",
+      "title": "Cybersecurity Services",
+      "description": "Security audits, vulnerability assessments, firewall configuration, security policy development, and employee security awareness training.",
+      "icon": "fas fa-shield-alt",
+      "color": "#f59e0b",
+      "order": 4
+    },
+    {
+      "id": "svc-5",
+      "title": "System Administration",
+      "description": "Windows Server and Linux administration, Active Directory management, virtualization (VMware/Hyper-V), backup, and disaster recovery.",
+      "icon": "fas fa-server",
+      "color": "#ef4444",
+      "order": 5
+    },
+    {
+      "id": "svc-6",
+      "title": "Cloud Solutions",
+      "description": "Cloud infrastructure setup and migration on Azure and AWS, hybrid cloud integration, cost optimization, and managed cloud services.",
+      "icon": "fas fa-cloud",
+      "color": "#22c55e",
+      "order": 6
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-1",
+      "title": "CCNA – Cisco Certified Network Associate",
+      "issuer": "Cisco",
+      "year": "2021",
+      "category": "Networking",
+      "icon": "fas fa-certificate",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "cert-2",
+      "title": "Microsoft Certified: Azure Administrator",
+      "issuer": "Microsoft",
+      "year": "2022",
+      "category": "Cloud",
+      "icon": "fab fa-microsoft",
+      "color": "#0078d4",
+      "order": 2
+    },
+    {
+      "id": "cert-3",
+      "title": "CompTIA Security+",
+      "issuer": "CompTIA",
+      "year": "2020",
+      "category": "Security",
+      "icon": "fas fa-shield-alt",
+      "color": "#e63946",
+      "order": 3
+    },
+    {
+      "id": "cert-4",
+      "title": "Odoo Certified Professional",
+      "issuer": "Odoo S.A.",
+      "year": "2023",
+      "category": "ERP",
+      "icon": "fas fa-database",
+      "color": "#7c3aed",
+      "order": 4
+    },
+    {
+      "id": "cert-5",
+      "title": "Certified Ethical Hacker (CEH)",
+      "issuer": "EC-Council",
+      "year": "2022",
+      "category": "Cybersecurity",
+      "icon": "fas fa-lock",
+      "color": "#10b981",
+      "order": 5
+    },
+    {
+      "id": "cert-6",
+      "title": "ITIL 4 Foundation",
+      "issuer": "Axelos",
+      "year": "2021",
+      "category": "ITSM",
+      "icon": "fas fa-project-diagram",
+      "color": "#f59e0b",
+      "order": 6
+    }
+  ],
+  "gallery": [],
+  "messages": [
+    {
+      "id": "msg-13d81f86-6002-4e5c-96c0-ca758b75a07f",
+      "name": "Dejene",
+      "email": "anteneh.tilaye-ug@aau.edu.et",
+      "subject": "aaa",
+      "message": "pless tell me about dejenie profile",
+      "read": true,
+      "createdAt": "2026-09-15T09:10:07.244Z"
+    },
+    {
+      "id": "msg-33689996-2bc0-4956-b4eb-3df4964a3850",
+      "name": "Dejene",
+      "email": "anteneh.tilaye-ug@aau.edu.et",
+      "subject": "aaa",
+      "message": "who is dejenie",
+      "read": true,
+      "createdAt": "2026-09-15T09:06:20.936Z"
+    }
+  ],
+  "chatbot": {
+    "enabled": true,
+    "botName": "Dejenie Bot",
+    "greeting": "Hi there! 👋 I'm Dejenie's assistant. Ask me anything about his skills, experience, projects, or how to get in touch!",
+    "placeholder": "Type a message...",
+    "color": "#3b82f6",
+    "quickReplies": [
+      "Who are you?",
+      "What are your skills?",
+      "Show me your projects",
+      "How can I contact you?",
+      "Download CV"
+    ],
+    "faqs": [
+      {
+        "id": "faq-1",
+        "keywords": [
+          "who",
+          "about",
+          "yourself",
+          "introduce"
+        ],
+        "answer": "I'm Dejenie Abebe, an IT Professional specializing in ERP implementation, networking, system administration, and cybersecurity. I help organizations build reliable technology solutions."
+      },
+      {
+        "id": "faq-2",
+        "keywords": [
+          "skill",
+          "skills",
+          "know",
+          "expertise",
+          "good at",
+          "tech"
+        ],
+        "answer": "My top skills include ERP Implementation (Odoo/SAP), Network Administration, Cybersecurity, Windows Server, Linux, Cisco Routing, Cloud Services (Azure/AWS), and IT Project Management."
+      },
+      {
+        "id": "faq-3",
+        "keywords": [
+          "experience",
+          "work",
+          "job",
+          "career",
+          "background"
+        ],
+        "answer": "I have 5+ years of experience. I've worked as an IT Manager, Network Engineer, and IT Support Specialist across multiple organizations. Check the Experience section for full details!"
+      },
+      {
+        "id": "faq-4",
+        "keywords": [
+          "project",
+          "projects",
+          "portfolio",
+          "work done",
+          "built"
+        ],
+        "answer": "I've completed 30+ projects including Enterprise ERP Rollouts, Corporate Network Infrastructure, IT Security Assessments, Cloud Migrations, and Data Center Setups. Visit the Projects section!"
+      },
+      {
+        "id": "faq-5",
+        "keywords": [
+          "service",
+          "services",
+          "offer",
+          "provide",
+          "help",
+          "hire"
+        ],
+        "answer": "I offer: IT Support & Help Desk, ERP Consulting & Implementation, Network Design & Administration, Cybersecurity Services, System Administration, and Cloud Solutions."
+      },
+      {
+        "id": "faq-6",
+        "keywords": [
+          "contact",
+          "reach",
+          "email",
+          "phone",
+          "message",
+          "touch"
+        ],
+        "answer": "You can reach me at dejenie@email.com or call +251 900 000 000. You can also fill out the Contact form on this page!"
+      },
+      {
+        "id": "faq-7",
+        "keywords": [
+          "cv",
+          "resume",
+          "download",
+          "curriculum"
+        ],
+        "answer": "You can download my CV using the Download CV button at the top of the page!"
+      },
+      {
+        "id": "faq-8",
+        "keywords": [
+          "location",
+          "where",
+          "country",
+          "city",
+          "based",
+          "ethiopia",
+          "addis"
+        ],
+        "answer": "I'm based in Addis Ababa, Ethiopia. I work both on-site and remotely for clients worldwide."
+      },
+      {
+        "id": "faq-9",
+        "keywords": [
+          "certification",
+          "certifications",
+          "certified",
+          "certificate"
+        ],
+        "answer": "I hold certifications including CCNA (Cisco), Microsoft Azure Administrator, CompTIA Security+, Odoo Certified Professional, CEH (EC-Council), and ITIL 4 Foundation."
+      },
+      {
+        "id": "faq-10",
+        "keywords": [
+          "erp",
+          "odoo",
+          "sap",
+          "implementation"
+        ],
+        "answer": "I specialize in ERP implementation using Odoo and SAP — from needs analysis and system setup to customization, data migration, and user training."
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+server/node_modules/
+admin/node_modules/
+
+# Environment — NEVER push this (contains your password)
+server/.env
+
+# Build output — keep dist for Vercel deployment
+# admin/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

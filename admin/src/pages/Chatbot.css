@@ -1,0 +1,130 @@
+/* ===== CHATBOT ADMIN PAGE ===== */
+
+.chatbot-admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.chatbot-section-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.chatbot-section-title i { color: var(--primary); }
+
+/* Toggle switch */
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.toggle-switch input { display: none; }
+
+.toggle-track {
+  width: 44px; height: 24px;
+  background: var(--border);
+  border-radius: 50px;
+  position: relative;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.toggle-switch input:checked ~ .toggle-track { background: var(--primary); }
+
+.toggle-thumb {
+  position: absolute;
+  width: 18px; height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  top: 3px; left: 3px;
+  transition: left 0.2s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.toggle-switch input:checked ~ .toggle-track .toggle-thumb { left: 23px; }
+
+.toggle-label { font-size: 0.875rem; color: var(--dark-3); font-weight: 500; }
+
+/* Quick reply chips */
+.quick-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary-light);
+  border: 1px solid #bfdbfe;
+  color: var(--primary);
+  padding: 5px 10px 5px 13px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.quick-chip button {
+  background: none; border: none;
+  color: var(--primary); cursor: pointer;
+  font-size: 0.7rem; padding: 0;
+  display: flex; align-items: center;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.quick-chip button:hover { opacity: 1; }
+
+/* FAQ rows */
+.faq-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+.faq-row:last-child { border-bottom: none; }
+.faq-row:hover { background: var(--bg); }
+
+.faq-number {
+  width: 24px; height: 24px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.72rem; font-weight: 700;
+  flex-shrink: 0; margin-top: 2px;
+}
+
+.faq-content { flex: 1; min-width: 0; }
+
+.faq-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.faq-answer {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.faq-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* Typing bounce animation (used in preview) */
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-6px); }
+}
+
+@media (max-width: 900px) {
+  .chatbot-admin-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dejenie Abebe | IT Professional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/profile.jpg" alt="Dejenie" class="nav-avatar" onerror="this.style.display='none'" />
+        <span>Dejenie.</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <a href="assets/Dejenie_Abebe_CV.pdf" download class="btn btn-primary nav-cv">
+        <i class="fas fa-download"></i> Download CV
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          IT PROFESSIONAL &middot; ERP &middot; NETWORKING &middot; CYBERSECURITY
+        </div>
+        <h1 class="hero-title">
+          Building Reliable <span class="text-gradient">IT Solutions</span> for Modern Businesses
+        </h1>
+        <p class="hero-desc">
+          I'm an IT professional experienced in ERP implementation, IT support, networking, system administration, and business technology solutions. I enjoy solving technical problems and building reliable systems that help organizations work more efficiently.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Hire Me <i class="fas fa-arrow-right"></i></a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <!-- Floating badges -->
+        <div class="badge-float badge-float--tl">
+          <div class="badge-icon" style="background:#e8f4ff"><i class="fas fa-headset" style="color:#3b82f6"></i></div>
+          <span>IT Support</span>
+        </div>
+        <div class="badge-float badge-float--tr">
+          <div class="badge-icon" style="background:#eef4ff"><i class="fas fa-database" style="color:#6366f1"></i></div>
+          <span>ERP Consultant</span>
+        </div>
+        <div class="badge-float badge-float--bl">
+          <div class="badge-icon" style="background:#e8fff4"><i class="fas fa-network-wired" style="color:#10b981"></i></div>
+          <span>Networking</span>
+        </div>
+        <div class="badge-float badge-float--br">
+          <div class="badge-icon" style="background:#fff4e8"><i class="fas fa-shield-alt" style="color:#f59e0b"></i></div>
+          <span>Cybersecurity</span>
+        </div>
+
+        <!-- Circular profile photo -->
+        <div class="hero-photo-ring">
+          <div class="hero-photo">
+            <img src="assets/profile.jpg" alt="Dejenie Abebe"
+              onerror="this.src='assets/profile-placeholder.svg'" />
+          </div>
+        </div>
+
+        <!-- Decorative blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-photo-wrap">
+            <img src="assets/profile.jpg" alt="Dejenie Abebe"
+              onerror="this.parentElement.innerHTML='<div class=\'about-photo-placeholder\'><i class=\'fas fa-user\'></i></div>'" />
+          </div>
+          <div class="about-info-card">
+            <div class="about-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Addis Ababa, Ethiopia</span>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-envelope"></i>
+              <span>dejenie@email.com</span>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-phone"></i>
+              <span>+251 900 000 000</span>
+            </div>
+            <div class="about-info-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Available for work</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>IT Professional &amp; Technology Enthusiast</h3>
+          <p>I am a dedicated IT professional with over 5 years of hands-on experience in deploying and managing ERP systems, designing and maintaining enterprise networks, and providing comprehensive IT support to organizations of all sizes.</p>
+          <p>My passion lies in leveraging technology to solve real-world business challenges. From setting up infrastructure to training end users on complex systems, I bring a holistic approach to every project I take on.</p>
+          <p>I hold certifications in networking, cybersecurity, and ERP platforms, and I continuously update my skill set to stay ahead of the rapidly evolving technology landscape.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>ERP Implementation &amp; Support</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Network Design &amp; Administration</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Cybersecurity &amp; Risk Management</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>System Administration (Windows &amp; Linux)</span>
+            </div>
+          </div>
+          <a href="assets/cv.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section experience bg-light" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>IT Manager</h3>
+                <span class="timeline-company"><i class="fas fa-building"></i> ABC Organization</span>
+              </div>
+              <span class="timeline-date">2022 – Present</span>
+            </div>
+            <p>Led the IT department overseeing network infrastructure, server management, and end-user support. Implemented ERP solutions that improved operational efficiency by 40%. Managed a team of 5 IT technicians.</p>
+            <div class="timeline-tags">
+              <span>ERP</span><span>Team Leadership</span><span>Network Admin</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Network Engineer</h3>
+                <span class="timeline-company"><i class="fas fa-building"></i> Tech Solutions Ltd.</span>
+              </div>
+              <span class="timeline-date">2020 – 2022</span>
+            </div>
+            <p>Designed, deployed, and maintained enterprise LAN/WAN networks for corporate clients. Configured Cisco routers and switches, implemented firewall policies, and provided 24/7 network monitoring and troubleshooting.</p>
+            <div class="timeline-tags">
+              <span>Cisco</span><span>Routing &amp; Switching</span><span>Firewall</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>IT Support Specialist</h3>
+                <span class="timeline-company"><i class="fas fa-building"></i> Global Enterprises</span>
+              </div>
+              <span class="timeline-date">2018 – 2020</span>
+            </div>
+            <p>Provided first and second-line IT support to over 200 employees. Managed help desk tickets, performed hardware/software troubleshooting, maintained Active Directory, and delivered IT training sessions.</p>
+            <div class="timeline-tags">
+              <span>Help Desk</span><span>Active Directory</span><span>Windows Server</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Junior IT Technician</h3>
+                <span class="timeline-company"><i class="fas fa-building"></i> StartUp Hub</span>
+              </div>
+              <span class="timeline-date">2016 – 2018</span>
+            </div>
+            <p>Installed and configured hardware and software for new users. Assisted in network cabling and setup, supported daily IT operations, and maintained IT asset inventory.</p>
+            <div class="timeline-tags">
+              <span>Hardware</span><span>Cabling</span><span>IT Support</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title">Technical Skills</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>ERP Implementation (Odoo/SAP)</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Network Administration</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Cybersecurity</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Windows Server / Active Directory</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Linux System Administration</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title">Tools &amp; Technologies</h3>
+          <div class="skill-item">
+            <div class="skill-info"><span>Cisco Routing &amp; Switching</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Firewall &amp; VPN Configuration</span><span>82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Cloud Services (Azure/AWS)</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Database Administration</span><span>78%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>IT Project Management</span><span>83%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="83"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Icon Badges -->
+      <div class="skill-badges reveal">
+        <div class="skill-badge"><i class="fas fa-server"></i><span>Servers</span></div>
+        <div class="skill-badge"><i class="fas fa-network-wired"></i><span>Networking</span></div>
+        <div class="skill-badge"><i class="fas fa-shield-alt"></i><span>Security</span></div>
+        <div class="skill-badge"><i class="fas fa-database"></i><span>ERP</span></div>
+        <div class="skill-badge"><i class="fab fa-linux"></i><span>Linux</span></div>
+        <div class="skill-badge"><i class="fab fa-windows"></i><span>Windows</span></div>
+        <div class="skill-badge"><i class="fas fa-cloud"></i><span>Cloud</span></div>
+        <div class="skill-badge"><i class="fas fa-code"></i><span>Scripting</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects bg-light" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Recent Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="assets/project1.jpg" alt="ERP Implementation" onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fas fa-database\'></i></div>'" />
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>ERP</span><span>Odoo</span></div>
+            <h3>Enterprise ERP Rollout</h3>
+            <p>Full-scale Odoo ERP implementation for a manufacturing company with 500+ users. Covered HR, Inventory, Accounting, and CRM modules.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="assets/project2.jpg" alt="Network Infrastructure" onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fas fa-network-wired\'></i></div>'" />
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Networking</span><span>Cisco</span></div>
+            <h3>Corporate Network Infrastructure</h3>
+            <p>Designed and deployed a multi-site WAN/LAN network with redundancy, QoS, and centralized management for a financial institution.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="assets/project3.jpg" alt="Security Audit" onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fas fa-shield-alt\'></i></div>'" />
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Cybersecurity</span><span>Audit</span></div>
+            <h3>IT Security Assessment</h3>
+            <p>Conducted a comprehensive security audit and vulnerability assessment for a government agency, delivering a remediation roadmap and policy updates.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="assets/project4.jpg" alt="IT Helpdesk" onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fas fa-headset\'></i></div>'" />
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>IT Support</span><span>ITSM</span></div>
+            <h3>Helpdesk System Implementation</h3>
+            <p>Set up and customized an ITSM helpdesk platform for a telecom company, reducing ticket resolution time by 35%.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="assets/project5.jpg" alt="Cloud Migration" onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fas fa-cloud\'></i></div>'" />
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Cloud</span><span>Azure</span></div>
+            <h3>Cloud Migration Project</h3>
+            <p>Migrated on-premise servers and applications to Microsoft Azure, resulting in 30% cost reduction and improved scalability.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="assets/project6.jpg" alt="Data Center" onerror="this.parentElement.innerHTML='<div class=\'project-img-placeholder\'><i class=\'fas fa-server\'></i></div>'" />
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Infrastructure</span><span>Data Center</span></div>
+            <h3>Data Center Setup</h3>
+            <p>Planned and set up a new data center for a retail chain, including rack installation, cabling, power management, and cooling systems.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">My Services</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg,#e8f4ff,#d0e8ff)">
+            <i class="fas fa-headset" style="color:#3b82f6"></i>
+          </div>
+          <h3>IT Support &amp; Help Desk</h3>
+          <p>Fast and reliable IT support for hardware, software, and connectivity issues. Remote and on-site assistance for individuals and businesses.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg,#eef4ff,#ddd6fe)">
+            <i class="fas fa-database" style="color:#6366f1"></i>
+          </div>
+          <h3>ERP Consulting &amp; Implementation</h3>
+          <p>End-to-end ERP project management from needs analysis and system selection to deployment, customization, and user training.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg,#e8fff4,#d1fae5)">
+            <i class="fas fa-network-wired" style="color:#10b981"></i>
+          </div>
+          <h3>Network Design &amp; Administration</h3>
+          <p>LAN/WAN design, router and switch configuration, wireless deployment, VPN setup, and ongoing network monitoring and maintenance.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg,#fff4e8,#fde68a)">
+            <i class="fas fa-shield-alt" style="color:#f59e0b"></i>
+          </div>
+          <h3>Cybersecurity Services</h3>
+          <p>Security audits, vulnerability assessments, firewall configuration, security policy development, and employee security awareness training.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg,#fff1f2,#fecdd3)">
+            <i class="fas fa-server" style="color:#ef4444"></i>
+          </div>
+          <h3>System Administration</h3>
+          <p>Windows Server and Linux administration, Active Directory management, virtualization (VMware/Hyper-V), backup, and disaster recovery.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg,#f0fdf4,#bbf7d0)">
+            <i class="fas fa-cloud" style="color:#22c55e"></i>
+          </div>
+          <h3>Cloud Solutions</h3>
+          <p>Cloud infrastructure setup and migration on Azure and AWS, hybrid cloud integration, cost optimization, and managed cloud services.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section gallery bg-light" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visual Portfolio</span>
+        <h2 class="section-title">Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-index="0">
+          <img src="assets/gallery1.jpg" alt="Work 1" onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><i class=\'fas fa-image\'></i><span>Work Photo 1</span></div>'" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-index="1">
+          <img src="assets/gallery2.jpg" alt="Work 2" onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><i class=\'fas fa-image\'></i><span>Work Photo 2</span></div>'" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-index="2">
+          <img src="assets/gallery3.jpg" alt="Work 3" onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><i class=\'fas fa-image\'></i><span>Work Photo 3</span></div>'" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-index="3">
+          <img src="assets/gallery4.jpg" alt="Work 4" onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><i class=\'fas fa-image\'></i><span>Work Photo 4</span></div>'" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-index="4">
+          <img src="assets/gallery5.jpg" alt="Work 5" onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><i class=\'fas fa-image\'></i><span>Work Photo 5</span></div>'" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item reveal" data-index="5">
+          <img src="assets/gallery6.jpg" alt="Work 6" onerror="this.parentElement.innerHTML='<div class=\'gallery-placeholder\'><i class=\'fas fa-image\'></i><span>Work Photo 6</span></div>'" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+      <button class="lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+      <div class="lightbox-img-wrap"><img id="lightboxImg" src="" alt="Gallery" /></div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section certifications" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-logo"><i class="fas fa-certificate"></i></div>
+          <div class="cert-info">
+            <h3>CCNA – Cisco Certified Network Associate</h3>
+            <span class="cert-issuer">Cisco</span>
+            <span class="cert-date">2021</span>
+            <span class="cert-badge">Networking</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo" style="color:#0078d4"><i class="fab fa-microsoft"></i></div>
+          <div class="cert-info">
+            <h3>Microsoft Certified: Azure Administrator</h3>
+            <span class="cert-issuer">Microsoft</span>
+            <span class="cert-date">2022</span>
+            <span class="cert-badge">Cloud</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo" style="color:#e63946"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-info">
+            <h3>CompTIA Security+</h3>
+            <span class="cert-issuer">CompTIA</span>
+            <span class="cert-date">2020</span>
+            <span class="cert-badge">Security</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo" style="color:#7c3aed"><i class="fas fa-database"></i></div>
+          <div class="cert-info">
+            <h3>Odoo Certified Professional</h3>
+            <span class="cert-issuer">Odoo S.A.</span>
+            <span class="cert-date">2023</span>
+            <span class="cert-badge">ERP</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo" style="color:#10b981"><i class="fas fa-lock"></i></div>
+          <div class="cert-info">
+            <h3>Certified Ethical Hacker (CEH)</h3>
+            <span class="cert-issuer">EC-Council</span>
+            <span class="cert-date">2022</span>
+            <span class="cert-badge">Cybersecurity</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-logo" style="color:#f59e0b"><i class="fas fa-project-diagram"></i></div>
+          <div class="cert-info">
+            <h3>ITIL 4 Foundation</h3>
+            <span class="cert-issuer">Axelos</span>
+            <span class="cert-date">2021</span>
+            <span class="cert-badge">ITSM</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact bg-light" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's Work Together</h3>
+          <p>Have a project in mind or need IT expertise? I'm available for freelance work, consulting, and full-time opportunities. Let's talk!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Location</strong>
+                <span>Addis Ababa, Ethiopia</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:dejenie@email.com">dejenie@email.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+251900000000">+251 900 000 000</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong>Availability</strong>
+                <span>Mon – Fri, 9AM – 6PM</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or inquiry..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Your message has been sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Col 1: Brand + bio + social -->
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-logo">
+            <img src="assets/profile.jpg" alt="Dejenie" class="footer-avatar" onerror="this.style.display='none'" />
+            <span>Dejenie.</span>
+          </a>
+          <p class="footer-bio">IT Professional specializing in ERP systems, networking, system administration, and cybersecurity. Building reliable technology solutions for modern businesses.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"  class="fsoc-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" class="fsoc-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"  class="fsoc-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Telegram"  class="fsoc-btn"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#" aria-label="WhatsApp"  class="fsoc-btn"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" aria-label="YouTube"   class="fsoc-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="footer-social" style="margin-top:8px">
+            <a href="mailto:dejenie@email.com" aria-label="Email" class="fsoc-btn"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title"><span class="footer-col-bar"></span> Quick Links</h4>
+          <ul class="footer-link-list">
+            <li><a href="#home"><i class="fas fa-circle"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-circle"></i> About</a></li>
+            <li><a href="#experience"><i class="fas fa-circle"></i> Experience</a></li>
+            <li><a href="#skills"><i class="fas fa-circle"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-circle"></i> Projects</a></li>
+            <li><a href="#services"><i class="fas fa-circle"></i> Services</a></li>
+            <li><a href="#contact"><i class="fas fa-circle"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title"><span class="footer-col-bar" style="background:#a855f7"></span> Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="#services"><i class="fas fa-circle"></i> IT Support</a></li>
+            <li><a href="#services"><i class="fas fa-circle"></i> ERP Implementation</a></li>
+            <li><a href="#services"><i class="fas fa-circle"></i> Network Support</a></li>
+            <li><a href="#services"><i class="fas fa-circle"></i> System Administration</a></li>
+            <li><a href="#services"><i class="fas fa-circle"></i> Web Development</a></li>
+            <li><a href="#services"><i class="fas fa-circle"></i> Cybersecurity Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Connect -->
+        <div class="footer-connect-col">
+          <h4 class="footer-col-title"><span class="footer-col-bar" style="background:#10b981"></span> Connect</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-envelope footer-contact-icon"></i>
+              <a href="mailto:dejenie@email.com">dejenie@email.com</a>
+            </li>
+            <li>
+              <i class="fab fa-linkedin footer-contact-icon"></i>
+              <a href="#" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+            </li>
+            <li>
+              <i class="fab fa-telegram-plane footer-contact-icon"></i>
+              <span>Telegram / +251 900 000 000</span>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp footer-contact-icon"></i>
+              <span>WhatsApp / +251 900 000 000</span>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+              <span>Addis Ababa, Ethiopia</span>
+            </li>
+          </ul>
+          <div class="footer-availability">
+            <span class="avail-dot"></span> Open to Opportunities
+          </div>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dejenie Abebe. All rights reserved.</p>
+        <p class="footer-built">Built with <i class="fas fa-heart" style="color:#ef4444"></i> using HTML, CSS &amp; JavaScript</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CHATBOT WIDGET ===== -->
+  <div class="chat-widget" id="chatWidget">
+
+    <!-- Toggle button -->
+    <button class="chat-toggle-btn" id="chatToggleBtn" aria-label="Open chat">
+      <i class="fas fa-robot chat-icon-open"></i>
+      <i class="fas fa-times chat-icon-close"></i>
+      <span class="chat-unread-badge" id="chatUnreadBadge" style="display:none">1</span>
+    </button>
+
+    <!-- Chat window -->
+    <div class="chat-window" id="chatWindow">
+
+      <!-- Header -->
+      <div class="chat-header" id="chatHeader">
+        <div class="chat-header-left">
+          <div class="chat-avatar">
+            <i class="fas fa-robot"></i>
+            <span class="chat-status-dot"></span>
+          </div>
+          <div class="chat-header-info">
+            <span class="chat-bot-name" id="chatBotName">Dejenie Bot</span>
+            <span class="chat-bot-status">Online · Always ready</span>
+          </div>
+        </div>
+        <div class="chat-header-actions">
+          <button class="chat-clear-btn" id="chatClearBtn" title="Clear chat"><i class="fas fa-trash-alt"></i></button>
+          <button class="chat-close-btn" id="chatCloseBtn" aria-label="Close chat"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+
+      <!-- INTRO SCREEN — shown before chat starts -->
+      <div class="chat-intro" id="chatIntro">
+        <div class="chat-intro-body">
+          <div class="chat-intro-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <h3 class="chat-intro-title">Before we start</h3>
+          <p class="chat-intro-subtitle">Please share your name and email so <strong id="chatIntroName">Dejenie</strong> can follow up with you.</p>
+
+          <div class="chat-intro-form">
+            <div class="chat-intro-field">
+              <label>Your Name <span>*</span></label>
+              <div class="chat-intro-input-wrap">
+                <i class="fas fa-user"></i>
+                <input type="text" id="chatUserName" placeholder="e.g. John Doe" autocomplete="name" maxlength="60" />
+              </div>
+            </div>
+            <div class="chat-intro-field">
+              <label>Your Email <span>*</span></label>
+              <div class="chat-intro-input-wrap">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="chatUserEmail" placeholder="e.g. john@example.com" autocomplete="email" maxlength="100" />
+              </div>
+            </div>
+            <button class="chat-start-btn" id="chatStartBtn">
+              <i class="fas fa-sparkles"></i> Start Chatting
+            </button>
+            <p class="chat-intro-privacy">
+              <i class="fas fa-lock"></i> Your info is private and only used to follow up with you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="chat-messages" id="chatMessages" style="display:none"></div>
+
+      <!-- Quick replies -->
+      <div class="chat-quick-replies" id="chatQuickReplies" style="display:none"></div>
+
+      <!-- Input -->
+      <div class="chat-input-area" id="chatInputArea" style="display:none">
+        <input
+          type="text"
+          class="chat-input"
+          id="chatInput"
+          placeholder="Type a message..."
+          autocomplete="off"
+          maxlength="300"
+        />
+        <button class="chat-send-btn" id="chatSendBtn" aria-label="Send" disabled>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+
+      <!-- Footer -->
+      <div class="chat-footer">
+        Powered by <strong>Dejenie Portfolio</strong>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
