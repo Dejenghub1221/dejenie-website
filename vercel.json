@@ -2,14 +2,38 @@
   "version": 2,
   "builds": [
     {
-      "src": "server/app.js",
+      "src": "api/index.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "portfolio/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "admin/dist/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "server/app.js"
+      "src": "/api/(.*)",
+      "dest": "api/index.js"
+    },
+    {
+      "src": "/portfolio/(.*)",
+      "dest": "portfolio/$1"
+    },
+    {
+      "src": "/admin/(.*)",
+      "dest": "admin/dist/$1"
+    },
+    {
+      "src": "/admin",
+      "dest": "admin/dist/index.html"
+    },
+    {
+      "src": "/",
+      "dest": "api/index.js"
     }
   ]
 }

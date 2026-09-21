@@ -1,18 +1,23 @@
-# Dependencies
+# ── Dependencies ─────────────────────────────────────────
 node_modules/
-server/node_modules/
+api/node_modules/
 admin/node_modules/
 
-# Environment — NEVER push this (contains your password)
-server/.env
+# ── Secrets — NEVER push ─────────────────────────────────
+api/.env
+.env
 
-# Build output — keep dist for Vercel deployment
-# admin/dist/
-
-# OS files
+# ── OS files ─────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 
-# Logs
+# ── Logs ─────────────────────────────────────────────────
 *.log
 npm-debug.log*
+
+# ── Local uploads (Cloudinary handles production) ────────
+api/uploads/*
+!api/uploads/.gitkeep
+
+# ── Keep admin/dist so Vercel can serve it ───────────────
+!admin/dist/

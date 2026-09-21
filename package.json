@@ -1,0 +1,15 @@
+{
+  "name": "dejenie-portfolio",
+  "version": "1.0.0",
+  "description": "Dejenie Abebe Personal Portfolio + Admin Panel",
+  "scripts": {
+    "dev:api":     "cd api && node index.js",
+    "dev:admin":   "cd admin && npm run dev",
+    "build:admin": "cd admin && npm run build",
+    "install:all": "cd api && npm install && cd ../admin && npm install",
+    "start":       "node api/index.js"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}
