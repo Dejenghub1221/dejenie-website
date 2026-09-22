@@ -20,15 +20,27 @@
       "dest": "api/index.js"
     },
     {
+      "src": "/uploads/(.*)",
+      "dest": "api/index.js"
+    },
+    {
+      "src": "/portfolio",
+      "dest": "portfolio/index.html"
+    },
+    {
       "src": "/portfolio/(.*)",
       "dest": "portfolio/$1"
     },
     {
-      "src": "/admin/(.*)",
+      "src": "/admin/assets/(.*)",
+      "dest": "admin/dist/assets/$1"
+    },
+    {
+      "src": "/admin/(.*\\.(?:js|css|svg|png|jpg|jpeg|ico|json|woff|woff2))",
       "dest": "admin/dist/$1"
     },
     {
-      "src": "/admin",
+      "src": "/admin.*",
       "dest": "admin/dist/index.html"
     },
     {

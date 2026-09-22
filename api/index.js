@@ -28,6 +28,10 @@ app.get('/api/health', (req, res) =>
   res.json({ status: 'ok', time: new Date().toISOString() })
 );
 
+// ── Serve Uploads at /uploads ──
+const uploadsPath = path.join(__dirname, 'uploads');
+app.use('/uploads', express.static(uploadsPath));
+
 // ── Serve Portfolio at /portfolio ──
 const portfolioPath = path.join(__dirname, '../portfolio');
 app.use('/portfolio', express.static(portfolioPath));
@@ -38,7 +42,7 @@ app.get('/portfolio', (req, res) =>
 // ── Serve Admin React build at /admin ──
 const adminBuild = path.join(__dirname, '../admin/dist');
 app.use('/admin', express.static(adminBuild));
-app.get('/admin/*', (req, res) =>
+app.get(['/admin', '/admin/*'], (req, res) =>
   res.sendFile(path.join(adminBuild, 'index.html'))
 );
 

@@ -81,7 +81,7 @@ export default function Layout() {
           </button>
           <span className="topbar-title">Portfolio Admin</span>
           <div className="topbar-right">
-            <a href="/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+            <a href="/portfolio" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
               <i className="fas fa-external-link-alt"></i> View Site
             </a>
             <div className="user-chip">
