@@ -26,16 +26,3 @@ services:
         sync: false
       - key: CLOUDINARY_API_SECRET
         sync: false
-    routes:
-      - type: rewrite
-        source: /api/*
-        destination: /api/*
-      - type: rewrite
-        source: /portfolio/*
-        destination: /portfolio/*
-      - type: rewrite
-        source: /admin/*
-        destination: /admin/*
-      - type: rewrite
-        source: /*
-        destination: /
