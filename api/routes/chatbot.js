@@ -58,24 +58,24 @@ router.post('/message', async (req, res) => {
     const { data: p } = await sb.from('profile').select('*').eq('id', 1).single();
 
     if (/hello|hi |hey/i.test(msg))
-      return res.json({ reply: `Hello! 😊 I'm ${cfg.bot_name}. How can I help?`, source: 'greeting' });
+      return res.json({ reply: `Hello! 😊 I'm ${cfg.bot_name || cfg.botName || 'Dejenie Bot'}. How can I help?`, source: 'greeting' });
     if (/who|name|yourself/i.test(msg))
-      return res.json({ reply: `I'm ${p?.name}. ${p?.bio}`, source: 'profile' });
+      return res.json({ reply: `I'm ${p?.name || 'Dejenie Abebe'}. ${p?.bio || ''}`, source: 'profile' });
     if (/skill|tech|expertise/i.test(msg)) {
       const { data: skills } = await sb.from('skills').select('name,percentage').order('order');
-      return res.json({ reply: `Top skills: ${skills.map(s => `${s.name} (${s.percentage}%)`).join(', ')}`, source: 'skills' });
+      return res.json({ reply: `Top skills: ${(skills || []).map(s => `${s.name} (${s.percentage}%)`).join(', ')}`, source: 'skills' });
     }
     if (/project|portfolio/i.test(msg)) {
       const { data: projects } = await sb.from('projects').select('title').order('order');
-      return res.json({ reply: `Recent projects: ${projects.map(p => p.title).join(', ')}`, source: 'projects' });
+      return res.json({ reply: `Recent projects: ${(projects || []).map(p => p.title).join(', ')}`, source: 'projects' });
     }
     if (/service|offer/i.test(msg)) {
       const { data: services } = await sb.from('services').select('title').order('order');
-      return res.json({ reply: `Services: ${services.map(s => s.title).join(', ')}`, source: 'services' });
+      return res.json({ reply: `Services: ${(services || []).map(s => s.title).join(', ')}`, source: 'services' });
     }
     if (/cert/i.test(msg)) {
       const { data: certs } = await sb.from('certifications').select('title,issuer').order('order');
-      return res.json({ reply: `Certifications: ${certs.map(c => `${c.title} (${c.issuer})`).join(', ')}`, source: 'certifications' });
+      return res.json({ reply: `Certifications: ${(certs || []).map(c => `${c.title} (${c.issuer})`).join(', ')}`, source: 'certifications' });
     }
     if (/contact|email|phone/i.test(msg))
       return res.json({ reply: `Email: ${p?.email} | Phone: ${p?.phone}`, source: 'profile' });

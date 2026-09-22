@@ -35,7 +35,7 @@ export default function Dashboard() {
     <div>
       <div className="page-header">
         <div className="page-title">Dashboard <small>Welcome back! Here's your portfolio overview.</small></div>
-        <a href="/" target="_blank" rel="noreferrer" className="btn btn-secondary">
+        <a href="/portfolio" target="_blank" rel="noreferrer" className="btn btn-secondary">
           <i className="fas fa-external-link-alt"></i> View Portfolio
         </a>
       </div>
@@ -75,7 +75,7 @@ export default function Dashboard() {
                   <div className="dash-msg-name">{m.name} <span className="dash-msg-email">{m.email}</span></div>
                   <div className="dash-msg-subject">{m.subject}</div>
                 </div>
-                <div className="dash-msg-time">{new Date(m.createdAt).toLocaleDateString()}</div>
+                <div className="dash-msg-time">{new Date(m.created_at || m.createdAt || Date.now()).toLocaleDateString()}</div>
               </div>
             ))}
           </div>

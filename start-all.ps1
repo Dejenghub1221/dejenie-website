@@ -12,7 +12,7 @@ Write-Host ""
 
 # 1. Start Backend
 Write-Host "  [1/3] Starting Backend Server (port 5000)..." -ForegroundColor Yellow
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$root\server'; node app.js" -WindowStyle Normal
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$root\api'; node index.js" -WindowStyle Normal
 
 Write-Host "        Waiting 3s for server to start..." -ForegroundColor Gray
 Start-Sleep -Seconds 3
@@ -26,18 +26,18 @@ Start-Sleep -Seconds 4
 
 # 3. Open Portfolio in browser
 Write-Host "  [3/3] Opening Portfolio in browser..." -ForegroundColor Yellow
-Start-Process "$root\index.html"
+Start-Process "http://localhost:5000/portfolio"
 
 # 4. Open Admin in browser
-Start-Process "http://localhost:5173"
+Start-Process "http://localhost:5000/admin"
 
 Write-Host ""
 Write-Host "  ============================================" -ForegroundColor Green
 Write-Host "   All services started!" -ForegroundColor Green
 Write-Host ""
-Write-Host "   Portfolio  : index.html (opened in browser)" -ForegroundColor White
+Write-Host "   Portfolio  : http://localhost:5000/portfolio (opened in browser)" -ForegroundColor White
 Write-Host "   Backend    : http://localhost:5000" -ForegroundColor White
-Write-Host "   Admin      : http://localhost:5173 (opened in browser)" -ForegroundColor White
+Write-Host "   Admin      : http://localhost:5000/admin (or http://localhost:5173 dev)" -ForegroundColor White
 Write-Host ""
 Write-Host "   Admin login: admin / admin123" -ForegroundColor Magenta
 Write-Host "  ============================================" -ForegroundColor Green
