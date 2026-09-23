@@ -24,12 +24,29 @@
       "dest": "api/index.js"
     },
     {
-      "src": "/portfolio",
+      "src": "/portfolio$",
+      "status": 308,
+      "headers": { "Location": "/portfolio/" }
+    },
+    {
+      "src": "/portfolio/",
       "dest": "portfolio/index.html"
     },
     {
       "src": "/portfolio/(.*)",
       "dest": "portfolio/$1"
+    },
+    {
+      "src": "/style.css",
+      "dest": "portfolio/style.css"
+    },
+    {
+      "src": "/script.js",
+      "dest": "portfolio/script.js"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "portfolio/assets/$1"
     },
     {
       "src": "/admin/assets/(.*)",
@@ -45,7 +62,7 @@
     },
     {
       "src": "/",
-      "dest": "api/index.js"
+      "dest": "portfolio/index.html"
     }
   ]
 }
