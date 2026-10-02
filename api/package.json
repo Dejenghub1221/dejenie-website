@@ -4,6 +4,7 @@
   "description": "Backend API for Dejenie Abebe Portfolio",
   "main": "index.js",
   "scripts": {
+    "build": "npm install --prefix ../admin && npm run build --prefix ../admin",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
