@@ -2,10 +2,10 @@
   "name": "dejenie-portfolio-server",
   "version": "1.0.0",
   "description": "Backend API for Dejenie Abebe Portfolio",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.44.4",

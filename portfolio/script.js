@@ -39,7 +39,16 @@ function escHtml(str = '') {
 
 function imgSrc(path) {
   if (!path) return null;
-  return `${API.replace('/api', '')}${path}`;
+  // Already an absolute URL (http/https) or a protocol-relative URL — return as-is
+  if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('//')) {
+    return path;
+  }
+  // Relative path starting with / — prepend the API origin (strips /api suffix)
+  if (path.startsWith('/')) {
+    return `${API.replace('/api', '')}${path}`;
+  }
+  // Bare relative path — prepend base
+  return `${API.replace('/api', '')}/${path}`;
 }
 
 /* ====================================================
