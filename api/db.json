@@ -242,15 +242,6 @@
       "icon": "fas fa-cloud",
       "color": "#22c55e",
       "order": 6
-    },
-    {
-      "id": "ser-1790142175607-6gu4",
-      "title": "Finacle Support",
-      "description": "Finacle Support",
-      "icon": "fas fa-cog",
-      "color": "#3b82f6",
-      "order": 7,
-      "created_at": "2026-09-23T05:42:55.690Z"
     }
   ],
   "certifications": [
@@ -315,7 +306,22 @@
       "order": 6
     }
   ],
-  "gallery": [],
+  "gallery": [
+    {
+      "id": "gal-1790925813176-dezg",
+      "url": "/uploads/image-1790925813130-127141.jpg",
+      "image_public_id": "image-1790925813130-127141.jpg",
+      "caption": "",
+      "created_at": "2026-10-02T07:23:33.176Z"
+    },
+    {
+      "id": "gal-1790925861409-wy1s",
+      "url": "/uploads/image-1790925861349-274355.jpg",
+      "image_public_id": "image-1790925861349-274355.jpg",
+      "caption": "",
+      "created_at": "2026-10-02T07:24:21.409Z"
+    }
+  ],
   "messages": [
     {
       "id": "msg-33689996-2bc0-4956-b4eb-3df4964a3850",
@@ -325,24 +331,6 @@
       "message": "who is dejenie",
       "read": true,
       "createdAt": "2026-09-15T09:06:20.936Z"
-    },
-    {
-      "id": "mes-1790074877930-6ty5",
-      "name": "Verification Bot",
-      "email": "test@example.com",
-      "subject": "Automated Test Message",
-      "message": "Testing contact message persistence.",
-      "created_at": "2026-09-22T11:01:17.930Z",
-      "read": true
-    },
-    {
-      "id": "mes-1790075434454-weyv",
-      "name": "esqdfikusujjw",
-      "email": "dejenieabebe767@email.com",
-      "subject": "fwrwtf3ew",
-      "message": "how are you",
-      "created_at": "2026-09-22T11:10:34.454Z",
-      "read": true
     }
   ],
   "chatbot": {
@@ -425,7 +413,7 @@
           "message",
           "touch"
         ],
-        "answer": "You can reach me at dejenie@email.com or call +251 900 000 000. You can also fill out the Contact form on this page!"
+        "answer": "You can reach me at dejenieabebe767@email.com or +251 923416687. You can also fill out the Contact form on this page!"
       },
       {
         "id": "faq-7",

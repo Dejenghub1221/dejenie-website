@@ -2,6 +2,21 @@ const express  = require('express');
 const router   = express.Router();
 const { getSupabase } = require('../db-supabase');
 const auth     = require('../middleware/auth');
+const fs       = require('fs');
+const path     = require('path');
+
+const DB_PATH = path.join(__dirname, '../db.json');
+
+function saveToLocalDb(entry) {
+  try {
+    const db = JSON.parse(fs.readFileSync(DB_PATH, 'utf-8'));
+    if (!Array.isArray(db.messages)) db.messages = [];
+    db.messages.unshift(entry);
+    fs.writeFileSync(DB_PATH, JSON.stringify(db, null, 2), 'utf-8');
+  } catch (e) {
+    console.error('[messages] local db fallback error:', e.message);
+  }
+}
 
 // POST /api/messages  (public — contact form)
 router.post('/', async (req, res) => {
@@ -9,11 +24,43 @@ router.post('/', async (req, res) => {
     const { name, email, subject, message } = req.body;
     if (!name || !email || !message)
       return res.status(400).json({ error: 'name, email, and message are required' });
-    const { error } = await getSupabase().from('messages')
-      .insert({ name, email, subject: subject || '(no subject)', message });
-    if (error) throw error;
+
+    const entry = {
+      id: `msg-${Date.now()}`,
+      name,
+      email,
+      subject: subject || '(no subject)',
+      message,
+      read: false,
+      created_at: new Date().toISOString()
+    };
+
+    const { error } = await getSupabase().from('messages').insert(entry);
+    if (error) {
+      // Supabase failed — fall back to local JSON silently
+      console.warn('[messages] Supabase insert failed, saving to local db:', error.message);
+      saveToLocalDb(entry);
+    }
     res.status(201).json({ success: true });
-  } catch (err) { res.status(500).json({ error: err.message }); }
+  } catch (err) {
+    // Any unexpected error — still save locally and return success to the user
+    console.error('[messages] unexpected error:', err.message);
+    try {
+      const { name, email, subject, message } = req.body;
+      saveToLocalDb({
+        id: `msg-${Date.now()}`,
+        name: name || '',
+        email: email || '',
+        subject: subject || '(no subject)',
+        message: message || '',
+        read: false,
+        created_at: new Date().toISOString()
+      });
+      res.status(201).json({ success: true });
+    } catch {
+      res.status(500).json({ error: err.message });
+    }
+  }
 });
 
 // GET /api/messages  (admin)
