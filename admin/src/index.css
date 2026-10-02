@@ -156,3 +156,42 @@ input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18p
 
 /* Color input */
 input[type="color"] { -webkit-appearance: none; width: 40px; height: 36px; border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 2px; cursor: pointer; background: none; }
+
+/* ====================================================
+   RESPONSIVE — Admin Panel
+   ==================================================== */
+
+/* Prevent any element from causing horizontal scroll */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Page header stacks on small screens */
+@media (max-width: 600px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .page-title { font-size: 1.2rem; }
+
+  /* Modal full-width on mobile */
+  .modal { max-width: 100% !important; margin: 0 10px; max-height: 95vh; }
+  .modal-body { padding: 16px; }
+  .modal-header, .modal-footer { padding: 14px 16px; }
+
+  /* Form rows stack */
+  .form-row { grid-template-columns: 1fr !important; gap: 14px !important; }
+
+  /* Cards take full width */
+  .card { border-radius: 10px; }
+
+  /* Tables scroll horizontally */
+  .table-wrap { -webkit-overflow-scrolling: touch; }
+  thead th, tbody td { padding: 10px 10px; font-size: 0.8rem; }
+}
+
+@media (max-width: 480px) {
+  /* Topbar compact */
+  .btn.btn-sm { padding: 5px 10px; font-size: 0.78rem; }
+
+  /* Badge wraps don't overflow */
+  .badge { font-size: 0.68rem; padding: 2px 8px; }
+}

@@ -119,9 +119,22 @@
 
 .hamburger-btn {
   display: none;
-  background: none; border: none;
-  font-size: 1.1rem; color: var(--dark-3); cursor: pointer;
-  padding: 6px;
+  background: none;
+  border: none;
+  font-size: 1.15rem;
+  color: var(--dark-3);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  min-width: 36px;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.hamburger-btn:hover {
+  background: var(--bg);
 }
 
 .topbar-title {
@@ -129,6 +142,10 @@
   font-size: 0.95rem;
   color: var(--dark);
   flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .topbar-right {
@@ -166,16 +183,24 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  min-width: 0;
 }
 
 .main-content {
   flex: 1;
   overflow-y: auto;
-  padding: 28px 28px;
+  overflow-x: hidden;
+  padding: 28px;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
+/* ===== TABLET (1024px) ===== */
+@media (max-width: 1024px) and (min-width: 993px) {
+  .admin-shell:not(.sidebar-collapsed) .sidebar { width: 220px; }
+  .main-content { padding: 20px; }
+}
+
+/* ===== MOBILE & TABLET RESPONSIVE ===== */
+@media (max-width: 992px) {
   .sidebar {
     position: fixed;
     top: 0; left: 0; bottom: 0;
@@ -196,5 +221,12 @@
   .hamburger-btn { display: flex; }
   .topbar-title { font-size: 0.9rem; }
   .sidebar-toggle { display: none; }
-  .main-content { padding: 16px; }
+  .main-content { padding: 20px 16px; }
+}
+
+@media (max-width: 540px) {
+  .topbar { padding: 0 12px; gap: 8px; }
+  .topbar-right .btn-secondary span,
+  .topbar-right .user-chip span { display: none; }
+  .topbar-title { font-size: 0.85rem; }
 }
