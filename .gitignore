@@ -19,5 +19,5 @@ npm-debug.log*
 api/uploads/*
 !api/uploads/.gitkeep
 
-# ── Keep admin/dist so Vercel can serve it ───────────────
-!admin/dist/
+# ── admin/dist is built by Render at deploy time ─────────
+admin/dist/
