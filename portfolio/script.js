@@ -43,7 +43,15 @@ function imgSrc(path) {
   if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('//')) {
     return path;
   }
-  // Relative path starting with / — prepend the API origin (strips /api suffix)
+  // /uploads/ paths only work locally — on Render they don't persist between deploys.
+  // Return null so callers keep the hardcoded fallback image instead of breaking.
+  if (path.startsWith('/uploads/')) {
+    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+      return `${API.replace('/api', '')}${path}`;
+    }
+    return null; // don't replace fallback with a broken URL
+  }
+  // Relative path starting with / — prepend the API origin
   if (path.startsWith('/')) {
     return `${API.replace('/api', '')}${path}`;
   }
@@ -64,7 +72,10 @@ async function loadProfile() {
   if (logoSpan) logoSpan.textContent = p.name.split(' ')[0] + '.';
 
   const navAvatar = document.querySelector('.nav-avatar');
-  if (navAvatar && p.photo) navAvatar.src = imgSrc(p.photo);
+  if (navAvatar && p.photo) {
+    const src = imgSrc(p.photo);
+    if (src) navAvatar.src = src;
+  }
 
   const heroBadge = document.querySelector('.hero-badge');
   if (heroBadge && p.tagline) {
@@ -88,10 +99,16 @@ async function loadProfile() {
   }
 
   const heroImg = document.querySelector('.hero-photo img');
-  if (heroImg && p.photo) heroImg.src = imgSrc(p.photo);
+  if (heroImg && p.photo) {
+    const src = imgSrc(p.photo);
+    if (src) heroImg.src = src;
+  }
 
   const aboutImg = document.querySelector('.about-photo-wrap img');
-  if (aboutImg && p.photo) aboutImg.src = imgSrc(p.photo);
+  if (aboutImg && p.photo) {
+    const src = imgSrc(p.photo);
+    if (src) aboutImg.src = src;
+  }
 
   const infoItems = document.querySelectorAll('.about-info-item span');
   if (infoItems.length >= 4) {
@@ -155,7 +172,10 @@ async function loadProfile() {
 
   // Footer avatar
   const footerAvatar = document.querySelector('.footer-avatar');
-  if (footerAvatar && p.photo) footerAvatar.src = imgSrc(p.photo);
+  if (footerAvatar && p.photo) {
+    const src = imgSrc(p.photo);
+    if (src) footerAvatar.src = src;
+  }
 }
 
 /* ====================================================
